@@ -4,7 +4,7 @@ using Manager.Domain.Validators;
 
 namespace Manager.Domain.Entities
 {
-    public abstract class User : Base
+    public class User : Base
     {
         public string Name { get; private set; }
 
