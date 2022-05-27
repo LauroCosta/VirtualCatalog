@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using Manager.Core.Exceptions;
 using Manager.Domain.Validators;
 
 namespace Manager.Domain.Entities
@@ -51,7 +51,7 @@ namespace Manager.Domain.Entities
                     _errors.Add(error.ErrorMessage);
                 }
 
-                throw new Exception("Erros");
+                throw new DomainException("Erros", _errors);
             }
 
             return true;

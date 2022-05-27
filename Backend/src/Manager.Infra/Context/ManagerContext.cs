@@ -17,7 +17,7 @@ namespace Manager.Infra.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\\mssqllocaldb;Database=VIRTUALCATALOGAPI;Trusted_Connection=true;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLlocalDB;Database=VIRTUALCATALOGAPI;Trusted_Connection=true;MultipleActiveResultSets=true");
             
         }
 
